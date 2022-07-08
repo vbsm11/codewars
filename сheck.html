@@ -7,15 +7,15 @@
 </head>
 
 <body>
-    <script>
-        function lovefunc(flower1, flower2){
-            return (flower1 % 2 == 0 && flower2 % 2 != 0) || (flower1 % 2 != 0 && flower2 % 2 == 0);
-        }
+<script>
+    function warnTheSheep(queue) {
+        return  queue.indexOf('wolf') === queue.length - 1
+            ? "Pls go away and stop eating my sheep"
+            : `Oi! Sheep number ${queue.length - 1 - queue.indexOf('wolf')}! You are about to be eaten by a wolf!`
+    }
 
-        console.log(lovefunc(5, 6));
-        console.log(lovefunc(5, 5));
-
-    </script>
+    console.log(warnTheSheep(["sheep", "sheep", "sheep", "sheep", "sheep", "wolf", "sheep", "sheep"]));
+</script>
 </body>
 
 </html>
