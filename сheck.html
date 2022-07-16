@@ -8,15 +8,11 @@
 
 <body>
 <script>
-    function areYouPlayingBanjo(name) {
-        return name.split('')[0].toLowerCase() === 'r'
-            ? `${name} plays banjo`
-            : `${name} does not play banjo`
-    }
+    const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+        return (mpg * fuelLeft >= distanceToPump)
+    };
 
-    console.log(areYouPlayingBanjo('Rita'))
-    let a = 'Rita';
-    console.log(a.split(''))
+    console.log(zeroFuel(100, 50, 1))
 </script>
 </body>
 
