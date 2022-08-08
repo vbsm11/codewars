@@ -8,12 +8,17 @@
 
 <body>
 <script>
-    String.prototype.toAlternatingCase = function () {
-        return this.split("").map(a => a === a.toUpperCase()? a.toLowerCase(): a.toUpperCase()).join('')
+    function correctTail(body, tail) {
+        sub = body.substr(body.length - tail.length)
+        if (sub === tail) {
+            return true
+        } else {
+            return false
+        }
     }
 
-
-    console.log(String.prototype.toAlternatingCase('hELlO'));
+    console.log(correctTail('dog', 'g'))
+    console.log(correctTail('Ehekqepkqqcxmxuoarplnox', 's'))
 </script>
 </body>
 
