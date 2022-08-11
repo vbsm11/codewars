@@ -8,16 +8,15 @@
 
 <body>
 <script>
-    function simpleMultiplication(number) {
-        let a;
-        number % 2 !== 0
-            ? a = number * 9
-            : a =  number * 8
-        return a;
+    function bmi(weight, height) {
+        const bmi1 = weight/(height*height);
+        if (bmi1 <= 18.5) return "Underweight"
+        if (bmi1 <= 25 && bmi1 > 18.5) return "Normal"
+        if (bmi1 <= 30 && bmi1 > 25) return "Overweight"
+        if (bmi1 > 30) return "Obese"
     }
 
-    console.log(simpleMultiplication(56))
-    console.log(simpleMultiplication(57))
+    console.log(bmi(74, 175))
 </script>
 </body>
 
