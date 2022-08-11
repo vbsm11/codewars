@@ -8,15 +8,16 @@
 
 <body>
 <script>
-    function bmi(weight, height) {
-        const bmi1 = weight/(height*height);
-        if (bmi1 <= 18.5) return "Underweight"
-        if (bmi1 <= 25 && bmi1 > 18.5) return "Normal"
-        if (bmi1 <= 30 && bmi1 > 25) return "Overweight"
-        if (bmi1 > 30) return "Obese"
+    function DNAtoRNA(dna) {
+        const arr = dna.split('');
+        for (let i=0; i<arr.length; i++) {
+            if (arr[i] === 'T') arr[i] = 'U'
+        }
+        return arr.join('')
     }
 
-    console.log(bmi(74, 175))
+    console.log(DNAtoRNA('AGT'))
+    console.log(DNAtoRNA('GCA'))
 </script>
 </body>
 
