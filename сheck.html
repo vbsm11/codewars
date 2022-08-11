@@ -8,17 +8,16 @@
 
 <body>
 <script>
-    function correctTail(body, tail) {
-        sub = body.substr(body.length - tail.length)
-        if (sub === tail) {
-            return true
-        } else {
-            return false
-        }
+    function simpleMultiplication(number) {
+        let a;
+        number % 2 !== 0
+            ? a = number * 9
+            : a =  number * 8
+        return a;
     }
 
-    console.log(correctTail('dog', 'g'))
-    console.log(correctTail('Ehekqepkqqcxmxuoarplnox', 's'))
+    console.log(simpleMultiplication(56))
+    console.log(simpleMultiplication(57))
 </script>
 </body>
 
