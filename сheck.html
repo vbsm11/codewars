@@ -8,17 +8,11 @@
 
 <body>
 <script>
-    const flip=(d, a)=>{
-        if (d === 'R') return a.sort(function(c, b) {
-            return c - b;
-        });
-        if (d === 'L') return a.sort(function(c, b) {
-            return b - c;
-        });
+    const quarterOf = (month) => {
+        return Math.ceil(month/3)
     }
 
-    console.log(flip('R', [1,7,4,8,2]))
-    console.log(flip('L', [1,7,4,8,2]))
+    console.log(quarterOf(11))
 </script>
 </body>
 
