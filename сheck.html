@@ -8,11 +8,11 @@
 
 <body>
 <script>
-    const isUpperCase = function(s) {
-        return s === s.toUpperCase();
+    function sumMix(x){
+        return x.reduce((s, e) => s + (+e), 0)
     }
 
-    console.log(isUpperCase('Hello World'))
+    console.log(sumMix([1, '2', 3]))
 </script>
 </body>
 
