@@ -8,11 +8,14 @@
 
 <body>
 <script>
-    function sumMix(x){
-        return x.reduce((s, e) => s + (+e), 0)
+    function howMuchILoveYou(nbPetals) {
+        const ph = ['I love you','a little', 'a lot', 'passionately', 'madly', 'not at all'];
+        return ph[ (nbPetals-1) % ph.length]
     }
 
-    console.log(sumMix([1, '2', 3]))
+
+    console.log(howMuchILoveYou(5))
+    console.log(howMuchILoveYou(55))
 </script>
 </body>
 
