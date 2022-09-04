@@ -8,14 +8,14 @@
 
 <body>
 <script>
-    function howMuchILoveYou(nbPetals) {
-        const ph = ['I love you','a little', 'a lot', 'passionately', 'madly', 'not at all'];
-        return ph[ (nbPetals-1) % ph.length]
+    function grow(x){
+        return x.reduce((a,e) => {
+          return a*e
+        }, 1)
     }
 
-
-    console.log(howMuchILoveYou(5))
-    console.log(howMuchILoveYou(55))
+    console.log(grow([5, 5, 1, 1]))
+    console.log(grow([5, 5, 5, 1]))
 </script>
 </body>
 
