@@ -8,12 +8,11 @@
 
 <body>
 <script>
-    function remove(string) {
-        if (string[string.length - 1] === '!') return string.slice(0, -1);
-        else return string;
+    function findMultiples(a, b) {
+        return Array.from(Array(b+1).keys())//.filter(e => e > 0 && e % a === 0)
     }
 
-    console.log(remove('!hi'))
+    console.log(findMultiples(5, 25))
 
 </script>
 </body>
