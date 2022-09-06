@@ -8,15 +8,12 @@
 
 <body>
 <script>
-    const arr = N => {
-        let a = []
-        for (let i = 0; i < N; i++) {
-            a.push(i)
-        }
-        return a;
-    };
+    function remove(string) {
+        if (string[string.length - 1] === '!') return string.slice(0, -1);
+        else return string;
+    }
 
-    console.log(arr(5))
+    console.log(remove('!hi'))
 
 </script>
 </body>
