@@ -8,17 +8,18 @@
 
 <body>
 <script>
-    function finalGrade (exam, projects) {
-        if (exam > 90 | projects > 10) return 100
-        if (exam > 75 & projects >= 5) return 90
-        if (exam > 50 & projects >= 2) return 75
-        else return 0
+    function strCount(str, letter){
+        let a = 0;
+        for (let i = 0; i < str.length; i++) {
+            if (str[i] === letter) a++
+        }
+        return a
     }
 
-    console.log(finalGrade(85, 5))
-    console.log(finalGrade(10, 15))
-    console.log(finalGrade(55, 3))
-    console.log(finalGrade(20, 2))
+    console.log(strCount('Hello', 'o'))
+    console.log(strCount('Hello', 'l'))
+    console.log(strCount('', 'o'))
+
 
 </script>
 </body>
