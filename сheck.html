@@ -10,16 +10,16 @@
 <script>
 
 
-    function sumOfDifferences(arr) {
-        arr.sort((a, b) => b - a)
-        let a = 0
-        for (let i = 0; i < arr.length - 1; i++) {
-            a += arr[i] - arr[i+1]
+    function nthEven(n){
+        let arr = [];
+        for (let i = 0; i <= n*2; i+=2) {
+            arr.push(i)
         }
-        return a
+        return arr[n-1]
     }
 
-    console.log(sumOfDifferences([1, 2, 10]))
+    console.log(nthEven(2))
+    console.log(nthEven(1298734))
 
 
 </script>
